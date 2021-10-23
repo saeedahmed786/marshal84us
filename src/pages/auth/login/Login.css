@@ -1,0 +1,126 @@
+.login.layout-full.page-dark:after {
+  background-color: rgba(33, 33, 33, 0.6); }
+
+  .login .font-size-40 {
+      font-size: 40px;
+      text-transform: uppercase;
+  }
+
+.login .main-desc {
+   opacity: .6;
+   color: #FFFFFF;
+   font-size: 20px;
+   max-width: 650px;
+   margin-top: 23px;
+}   
+
+.login .title {
+   font-size: 24px !important;
+}
+
+.login .desc {
+  color: #757575;
+}
+.login .inner {
+  height: 100vh;
+}
+.login .col-md-4 {
+  background: #fff;
+  padding: 60px;
+  padding-top: 160px;
+}
+
+.login .form-floating {
+    margin-top: 40px;
+}
+.login .form-floating input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: .8rem;
+  border-bottom: 1px solid silver;
+  border-radius: 0px;
+  background: #FFFFFF;
+}
+
+.login .form-floating label {
+  padding-left: 0px;
+  color: #76838f !important;
+  opacity: .8;
+  font-weight: 600 !important;
+  font-size: .9rem;
+}
+
+.login .form-floating .form-control {
+  transition: border-color 0s ease-out;
+}
+.login .form-floating .form-control:focus {
+  border-color: #3e8ef7;
+  border-width: 2px;
+  box-shadow: none;
+  transition-duration: .3s;
+}
+
+
+.login .form-floating .form-control:focus ~ label {
+  color: #3e8ef7 !important;
+  padding-left: 0px;
+}
+
+.login .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+  border-color: #3e8ef7;
+  border-width: 2px;
+  /* transform-origin: center; */
+}
+
+.login .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) ~ label {
+  color: #76838f;
+  padding-left: 0px;
+}
+
+
+.login input[type='checkbox'] {
+  accent-color: #3e8ef7;
+  width: 20px;
+  height: 20px;
+  opacity: .2;
+}
+.login input[type='checkbox']:checked {
+  opacity: 1;
+}
+
+.login .submit {
+  background: #3e8ef7;
+  color: #FFFFFF;
+}
+
+.login .footer .copyright {
+  margin-top: 60px;
+  font-size: .858rem;
+  color: #37474f;
+  letter-spacing: 1px;
+}
+.login .icons div {
+ background: #55acee;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ width: 43px;
+ height: 43px;
+ color: white;
+ cursor: pointer;
+}
+
+.login .icons .google {
+background: #dd4b39;
+}
+
+.login .icons .facebook {
+background: #3b5998;
+}
+
+.login .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+opacity: .65;
+transform: scale(.85) translateY(-.5rem) translateX(0rem);
+}

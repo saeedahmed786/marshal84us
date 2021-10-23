@@ -1,0 +1,61 @@
+.dashboard-nav {
+    min-height: 80vh;
+    padding-top: 80px;
+  }
+  .dashboard-nav .ant-tabs-ink-bar {
+    background: rgba(251, 109, 58, 1) !important;
+    width: 2px !important;
+    height: 24px !important;
+    margin-top: 8px;
+  }
+  
+  .dashboard-nav .ant-tabs-nav-list {
+    background-color: white;
+    width: 210px;
+    height: 900px;
+    margin-top: 19px;
+    border-top-right-radius: 30px;
+  }
+  
+  .dashboard-nav .ant-tabs-content-holder {
+    margin-left: 40px !important;
+  }
+    
+  .dashboard-nav .ant-tabs-tab:hover {
+    color: rgba(251, 109, 58, 1) !important;
+  }
+  
+  .dashboard-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: rgba(251, 109, 58, 1) !important;
+  }
+  
+  .dashboard-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: rgba(251, 109, 58, 1) !important;
+    
+  }
+  
+  .dashboard-nav .ant-tabs-tab {
+     color: gray;
+  }
+  
+  
+  .dashboard-nav .ant-tabs-tab svg {
+     margin-right: 15px;
+     vertical-align: text-top;
+  }
+  .dashboard-nav .ant-tabs-left > .ant-tabs-content-holder, .ant-tabs-left > div > .ant-tabs-content-holder {
+    border-left: none !important;
+  }
+  
+  .dashboard-nav .ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-left > div > .ant-tabs-nav .ant-tabs-ink-bar {
+    left: 0 !important;
+  }
+  
+  .dashboard-nav .ant-tabs-tab {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  
+  .dashboard-nav .ant-tabs-nav {
+    width: 286px !important;
+  }
