@@ -147,3 +147,7 @@ background: #3b5998;
   background: #FFFFFF !important;
   box-shadow: none;
 }
+
+.login .form-control {
+  padding-left: 0px;
+}
