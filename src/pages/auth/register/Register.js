@@ -27,18 +27,22 @@ export const Register = () => {
             <div className="form-floating">
               <input type="text" className="form-control" id="floatingInput" placeholder="name" />
               <label for="floatingInput">Name</label>
+              <span className = 'border-anim'></span>
             </div>
             <div className="form-floating">
               <input type="email" className="form-control" id="floatingInput" placeholder="Email" />
               <label for="floatingInput">Email</label>
+              <span className = 'border-anim'></span>
             </div>
             <div className="form-floating">
               <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
               <label for="floatingPassword">Password</label>
+              <span className = 'border-anim'></span>
             </div>
             <div className="form-floating">
               <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
               <label for="floatingPassword">Retype Password</label>
+              <span className = 'border-anim'></span>
             </div>
             <div className = 'd-flex align-items-center gap-4 nowrap'>
                 <input type="checkbox" className = '' />

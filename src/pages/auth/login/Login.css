@@ -33,15 +33,6 @@
 .login .form-floating {
     margin-top: 40px;
 }
-.login .form-floating input{
-  height: 100%;
-  width: 100%;
-  border: none;
-  font-size: .8rem;
-  border-bottom: 1px solid silver;
-  border-radius: 0px;
-  background: #FFFFFF;
-}
 
 .login .form-floating label {
   padding-left: 0px;
@@ -51,26 +42,9 @@
   font-size: .9rem;
 }
 
-.login .form-floating .form-control {
-  transition: border-color 0s ease-out;
-}
-.login .form-floating .form-control:focus {
-  border-color: #3e8ef7;
-  border-width: 2px;
-  box-shadow: none;
-  transition-duration: .3s;
-}
-
-
 .login .form-floating .form-control:focus ~ label {
   color: #3e8ef7 !important;
   padding-left: 0px;
-}
-
-.login .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
-  border-color: #3e8ef7;
-  border-width: 2px;
-  /* transform-origin: center; */
 }
 
 .login .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) ~ label {
@@ -121,6 +95,55 @@ background: #3b5998;
 }
 
 .login .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
-opacity: .65;
-transform: scale(.85) translateY(-.5rem) translateX(0rem);
+  opacity: .65;
+  transform: scale(.85) translateY(-.5rem) translateX(0rem);
+}
+
+
+
+
+
+.login .form-floating {
+  position: relative;
+}
+.login .form-floating input {
+  border: none !important;
+  border-bottom: 1px solid silver !important;
+  border-radius: 0;
+  height: 20% !important;
+}
+
+.login .form-floating input:focus {
+  border-bottom: 0 !important;
+}
+.login .form-floating .border-anim {
+  position: absolute;
+  height: .1rem !important;
+  left: 50%;
+  width: 0%;
+  transition-duration: .4s;
+}
+
+.login .form-floating input:focus ~ span.border-anim {
+    width: 100%;
+    background: #3e8ef7 !important;
+    left: 0%;
+    height: .1rem !important;
+}
+
+.login .form-floating>.form-control:not(:placeholder-shown) {
+  border-bottom: 0 !important;
+}
+
+.login .form-floating>.form-control:not(:placeholder-shown) ~ .border-anim {
+  width: 100%;
+  background: #3e8ef7 !important;
+  left: 0%;
+  height: .1rem !important;
+}
+
+.login .form-control {
+  border: 0;
+  background: #FFFFFF !important;
+  box-shadow: none;
 }
