@@ -1,11 +1,7 @@
-import { UserOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
-import Search from 'antd/lib/transfer/search'
 import React from 'react'
 import { Link } from 'react-router-dom';
 
 export const Invoice = () => {
-    const onSearch = value => console.log(value);
 
     return (
         <div className='invoices bg-light p-4 px-5' style={{ height: '100vh' }}>
@@ -31,7 +27,7 @@ export const Invoice = () => {
             <div className='mt-5 bottom-section'>
                 <h5>Invoice</h5>
                 <p className='fs-5'>A list of all the invoices</p>
-                <Search placeholder="Search here..." onSearch={onSearch} style={{ width: 200 }} />
+                <input placeholder="Search here..." style={{ width: '200px' }} />
                 <table class="table table-borderless mt-4">
                     <thead>
                         <tr>

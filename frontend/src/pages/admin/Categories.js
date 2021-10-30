@@ -1,45 +1,11 @@
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import swal from 'sweetalert';
 
 
 export const Categories = () => {
   const [categories, setCategories] = useState([]);
 
-  const getAllJobsCategories = async () => {
-    await axios.get('/api/categories/jobs/get').then(res => {
-       if(res.status === 200) {
-         setCategories(res.data);
-       } else {
-         swal('Sorry!', res.data.errorMessage, 'error');
-       }
-    })
- }
-
- useEffect(() => {
-    getAllJobsCategories()
-   return () => {
-   }
- }, []);
-
-
- const deleteHandler = async (id) => {
-  await axios.delete(`/api/categories/jobs/delete/${id}`, {
-    headers: {
-      'authorization': 'Bearer ' + localStorage.getItem('token')
-    }
-  }).then(res => {
-    if (res.status === 200) {
-       swal('Great!', res.data.successMessage, 'success');
-       getAllJobsCategories();
-    } else {
-      swal('Sorry!', res.data.errorMessage, 'error');
-    }
-  })
-
-}
 
 
   return (
@@ -66,7 +32,7 @@ export const Categories = () => {
                       <Link className='btn' style={{ textDecoration: 'none' }}><EditOutlined /></Link>
                       {
                         cat.children.length === 0 ?
-                          <button className='btn' onClick = {() => deleteHandler(cat._id)}><DeleteOutlined /></button>
+                          <button className='btn'><DeleteOutlined /></button>
                           :
                           null
                       }
@@ -85,7 +51,7 @@ export const Categories = () => {
                                     <Link className='btn' style={{ textDecoration: 'none' }}><EditOutlined /></Link>
                                     {
                                       subCat.children.length === 0 ?
-                                        <button className='btn' onClick = {() => deleteHandler(subCat._id)}><DeleteOutlined /></button>
+                                        <button className='btn'><DeleteOutlined /></button>
                                         :
                                         null
                                     }
