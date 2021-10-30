@@ -2,6 +2,7 @@ const express = require('express');
 const userRoutes = require('./routes/userRoutes');
 const mongoose  = require('mongoose');
 const config = require('./config/keys');
+const path = ('path');
 const app = express();
 
 /******************************************  MiddleWares  ********************************************/
