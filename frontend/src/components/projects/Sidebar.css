@@ -1,0 +1,12 @@
+.site-menubar {
+    background: rgb(243, 243, 243) !important;
+}
+
+.site-menubar .site-menu-item a {
+    color: rgb(207, 207, 207);
+}
+
+.site-menubar .site-menu-item .active-link {
+    color: black;
+}
+

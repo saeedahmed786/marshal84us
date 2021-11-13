@@ -1,0 +1,23 @@
+nav {
+    background: #0a4da5 !important;
+}
+
+nav .navbar-container {
+    background: #0a4da5 !important;
+}
+
+nav .navbar-container a, nav .navbar-container .icon {
+    color: #FFFFFF !important;
+}
+
+nav .navbar-container .dropdown-menu .dropdown-item {
+    color: #76838f !important;
+}
+
+nav .navbar-container .dropdown-menu .dropdown-item .icon {
+    color: #76838f !important;
+}
+
+.navbar-default .hamburger .hamburger-bar, .navbar-default .hamburger::after, .navbar-default .hamburger::before {
+    background: #FFFFFF;
+}
