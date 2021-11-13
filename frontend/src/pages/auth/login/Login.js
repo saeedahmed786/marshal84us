@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router';
 import './Login.css';
-import Background from '../../../images/login.jpg';
 import { Link } from 'react-router-dom';
 import { Footer } from '../../../components/auth/Footer';
 import axios from 'axios';
@@ -41,7 +40,7 @@ export const Login = () => {
     })
   }
   return (
-    <div className='page-login-v2' style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(" + `${Background}` + ")", height: '100vh', overflowY: 'scroll', overflowX: 'hidden', opacity: '.93' }}>
+    <div className='page-login-v2' style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(" + `${'/assets/images/login.jpg'}` + ")", height: '100vh', overflowY: 'scroll', overflowX: 'hidden', opacity: '.93' }}>
       <div className="page-content">
         <div className="page-brand-info">
           <div className="brand">

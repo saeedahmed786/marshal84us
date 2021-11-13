@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Register.css';
-import Background from '../../../images/login.jpg';
 import { Link } from 'react-router-dom';
 import { Footer } from '../../../components/auth/Footer';
 import axios from 'axios';
@@ -40,7 +39,7 @@ export const Register = () => {
     }
   }
   return (
-    <div className='page-register-v2' style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(" + `${Background}` + ")", height: '100vh', overflowY: 'scroll', overflowX: 'hidden', opacity: '.93' }}>
+    <div className='page-register-v2' style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(" + `${'/assets/images/login.jpg'}` + ")", height: '100vh', overflowY: 'scroll', overflowX: 'hidden', opacity: '.93' }}>
       <div className="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
         <div className="page-content">
           <div className="page-brand-info">
